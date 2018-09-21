@@ -14,7 +14,8 @@ pipeline {
         }
         stage ('Deployment Stage') {
             steps {
-                    sh 'mvn deploy'
+		    echo 'Deploying the app'
+		    echo 'Finished deployed'
             }
         }
     }
